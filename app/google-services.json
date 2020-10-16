@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "916468582756",
+    "firebase_url": "https://rwandalateststatus.firebaseio.com",
+    "project_id": "rwandalateststatus",
+    "storage_bucket": "rwandalateststatus.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916468582756:android:5362a3fb2df34d7ca0d271",
+        "android_client_info": {
+          "package_name": "com.video.status_downloader.supernover"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "916468582756-amffvp51ia97aepu519odl0farrfsv87.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXx9hP1uWNp3NZvNQqPzSK1kLSW2xahsE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "916468582756-amffvp51ia97aepu519odl0farrfsv87.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

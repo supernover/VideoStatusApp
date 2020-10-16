@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#151C25"
+    android:padding="@dimen/_20sdp"
+    android:id="@+id/cardinfo"
+    android:gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:padding="@dimen/_30sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="6dp"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:text="@string/app_name"
+                android:textSize="@dimen/_20sdp"
+                android:gravity="center"
+                android:textColor="@color/colormain"
+                android:fontFamily="@font/loveloblack"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:padding="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text="Thank You For Buying our Code Please Verify your Packegename With Our Team To Enabel Your App"
+                android:textSize="@dimen/_17sdp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:fontFamily="@font/nunito_bold"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="RtlCompat" />
+
+
+            <Button
+                android:id="@+id/whatsapp"
+                android:layout_margin="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:background="@color/green_inactive"
+                android:text="WHATSAPP"
+                android:textColor="@color/white"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

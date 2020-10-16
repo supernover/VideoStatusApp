@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/video_navi"
+        android:icon="@drawable/ic_video"
+        android:checked="true"
+        android:title="video"
+        app:showAsAction="ifRoom"
+
+        />
+
+
+
+    <item
+        android:id="@+id/image_navi"
+        android:icon="@drawable/ic_image"
+        android:title="DP image status"
+        android:checked="false"
+        app:showAsAction="ifRoom"
+        />
+
+
+    <item
+        android:id="@+id/statusdown_navi"
+        android:icon="@drawable/ic_whatsapp"
+        android:title="status saver"
+        android:checked="false"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/statusdown_earn"
+        android:icon="@drawable/ic_earn"
+        android:title="Earn Money"
+        android:checked="false"
+        app:showAsAction="ifRoom"
+        />
+
+
+
+
+
+
+
+</menu>

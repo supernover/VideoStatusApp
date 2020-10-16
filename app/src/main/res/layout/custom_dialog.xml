@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:background="#151c25"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="320dp"
+   >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="@dimen/_8sdp"
+        app:cardBackgroundColor="#ffffff">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TOP APPS"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="@dimen/_20sdp"
+
+                >
+
+            </TextView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/app1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:src="@drawable/mehandi_logo" />
+
+                <ImageView
+                    android:id="@+id/app2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:src="@drawable/mehandi_logo" />
+
+                <ImageView
+                    android:id="@+id/app3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:src="@drawable/mehandi_logo" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/app4"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/mehandi_logo"/>
+
+                <ImageView
+                    android:id="@+id/app5"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/mehandi_logo"/>
+
+                <ImageView
+                    android:id="@+id/app6"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/mehandi_logo"/>
+
+
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rate Us"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="#2196F3"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Do You Loved it? Rate it Now on Google Play"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="#2196F3"
+                android:textStyle="italic"
+                android:gravity="center"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/ratenow"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:layout_width="120dp"
+                    android:layout_height="45dp"
+                    app:cardCornerRadius="@dimen/_8sdp"
+                    app:cardBackgroundColor="#2196F3">
+
+
+                    <TextView
+                        android:text="Rate Now"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/exit"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:layout_width="120dp"
+                    android:layout_height="45dp"
+                    app:cardCornerRadius="@dimen/_8sdp"
+                    app:cardBackgroundColor="#F44336">
+
+
+                    <TextView
+                        android:text="No, Exite"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+</LinearLayout>

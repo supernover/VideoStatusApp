@@ -1,0 +1,75 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Status Discover</string>
+    <string name="drawer_open">drawer open</string>
+    <string name="drawer_close">drawer close</string>
+
+
+
+
+    <string name="zero">0:00</string>
+
+
+
+
+
+    <string name="whatsapp_download">Whatsapp Status Downloader</string>
+    <string name="no_status">No status is available. Watch any status update and come back here!</string>
+    <string name="StatusParsing">Parsing Statuses</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <array name="menuOptions">
+        <item>Home</item>
+        <item>Personal</item>
+        <item>High scores</item>
+        <item>Settings</item>
+        <item>About</item>
+    </array>
+
+    <string name="home">Home</string>
+    <string name="image">DP Image</string>
+    <string name="status">Status Saver</string>
+    <string name="earn">Earn Money</string>
+    <string name="likes">Favs</string>
+    <string name="happy">Happy</string>
+    <string name="room">Room</string>
+    <string name="restaurant">Food</string>
+    <string name="shop">Shop</string>
+    <string name="photos">Pics</string>
+    <string name="call">Call</string>
+    <string name="try_later">try later</string>
+
+    <string name="title_activity_drawer">WhatsAppStatus</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    //edit this
+
+    // Admob App ID
+    <string name="appid">ca-app-pub-3063877521249388~7893391211</string>
+
+    // Your PrivacyLink
+    <string name="privacylink">https://play.google.com/store/apps/details?id=com.whatsapp</string>
+
+    // Your Packegename.fileprovider
+    <string name="authority" translatable="false">com.video.status_downloader.supernover.fileprovider</string>
+
+    //Video Points
+    <string name="videopoints">5</string>
+
+    // packegename
+    <string name="packegname" translatable="false">com.video.status_downloader.supernover</string>
+
+    //Key
+    <string name="appdata">super1</string>
+
+
+
+
+
+</resources>

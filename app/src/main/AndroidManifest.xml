@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.video.status_downloader.supernover">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logovideo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/logovideo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+        <activity android:name="com.video.status_downloader.supernover.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.video.status_downloader.supernover.Video_play" />
+        <activity android:name="com.video.status_downloader.supernover.Redeem" />
+        <activity android:name="com.video.status_downloader.supernover.How_it_works" />
+        <activity android:name="com.video.status_downloader.supernover.ForgatePass" />
+        <activity android:name="com.video.status_downloader.supernover.Splashscreen" />
+        <activity android:name="com.video.status_downloader.supernover.SignUp" />
+        <activity android:name="com.video.status_downloader.supernover.ImagesStatusPrivew" />
+        <activity android:name="com.video.status_downloader.supernover.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.video.status_downloader.supernover.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name="com.video.status_downloader.supernover.ViewerActivity.ImageViewerActivity"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.video.status_downloader.supernover.ViewerActivity.VIdeoViewerActivity"
+            android:configChanges="orientation"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/appid" />
+
+        <receiver android:name="com.video.status_downloader.supernover.Services.NotificationActionService" />
+
+        <service android:name="com.video.status_downloader.supernover.Services.OnClearFromRecentService" />
+        <service
+            android:name="com.video.status_downloader.supernover.BackgroundSoundService"
+            android:enabled="true" />
+    </application>
+
+</manifest>

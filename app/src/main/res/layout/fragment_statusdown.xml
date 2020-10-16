@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:fitsSystemWindows="true"
+                app:contentScrim="?android:attr/colorControlHighlight"
+                app:expandedTitleMarginEnd="64dp"
+                app:expandedTitleMarginStart="48dp"
+                app:expandedTitleTextAppearance="@android:color/transparent"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                android:background="#151C25"
+                tools:ignore="NewApi">
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Status Downloader"
+                            android:fontFamily="@font/nunito_bold"
+                            android:textColor="#FFFFFF"
+                            android:textSize="25sp"
+                            android:layout_centerVertical="true"/>
+
+
+
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:gravity="right"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/idmenu"
+                            android:layout_width="30dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/ic_menu"
+                            android:layout_gravity="center"
+                            android:tint="#FFFFFF"/>
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabs"
+                android:background="@color/orange_active"
+                app:tabTextColor="#FFFFFF"
+                app:tabSelectedTextColor="#FDFEFF"
+                app:tabIndicatorColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabGravity="fill"
+                app:tabMaxWidth="0dp"
+                app:tabMode="fixed"/>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpagersave"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</FrameLayout>

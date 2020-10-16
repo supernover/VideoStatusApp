@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#010E81"
+    tools:context=".ForgatePass">
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="71dp"
+        android:src="@drawable/flock" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="177dp"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="Forgot passwords?"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+
+    <TextView
+        android:id="@+id/fooo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="235dp"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="We just need your registered email address to send you password reset"
+        android:textColor="@color/edittext"
+        android:textSize="14dp" />
+
+    <RelativeLayout
+        android:id="@+id/rvemail"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+       android:layout_below="@+id/fooo"
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            app:srcCompat="@drawable/mail"
+            android:padding="5dp"
+            android:tint="@color/white"
+            android:id="@+id/user"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#ffc109"
+            />
+
+        <EditText
+            android:id="@+id/email"
+            android:paddingLeft="15dp"
+            android:hint="Email Id"
+            android:fontFamily="@font/nunito_semibold"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColorHint="@color/edittext"
+            android:inputType="textEmailAddress"
+            android:layout_toRightOf="@+id/user"
+            android:background="#1f5e76"
+            android:textSize="15sp"/>
+
+    </RelativeLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btn_reset_password"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rvemail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:clickable="true"
+        android:soundEffectsEnabled="true"
+        app:cardBackgroundColor="#00712B"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="RESET PASSWORD"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+    </androidx.cardview.widget.CardView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center|bottom"
+        android:layout_marginTop="17dp"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:id="@+id/gotosignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:text="DON'T HAVE AN ACCOUNT?"
+        android:clickable="true"
+        android:textColor="#dadada" />
+
+
+
+</RelativeLayout>

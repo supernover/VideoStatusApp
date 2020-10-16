@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".How_it_works">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/orange_active"
+        tools:targetApi="lollipop">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How to Earn Money"
+            android:textColor="@color/white"
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="25sp"
+            android:layout_centerVertical="true"/>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="(1) Watch Videos And Earn 5 Coins "
+                    android:textSize="15dp"/>
+
+
+                <TextView
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="(2) Share App With Friends "
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="(3) Redeem With Paytm and Paypal "
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="(4) Payment Received in 24 hr"
+                    android:textSize="15dp"/>
+
+
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+
+
+     </LinearLayout>
+
+
+
+
+
+
